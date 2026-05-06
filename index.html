@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de Lyna</title>
+    <style>
+        :root {
+            --bg-color: #ffe5d9;
+            --text-color: #4a4a4a;
+            --accent-color: #ff9e7d;
+            --card-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 158, 125, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--accent-color);
+            margin-bottom: 1.5rem;
+            background-color: #eee;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #ff9e7d, #ffcc80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #777;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #fff0e6;
+            color: #ff9e7d;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 1rem;
+            border: 1px solid #ffe0cc;
+        }
+
+        .skills-section {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #fff9f5;
+            border-radius: 15px;
+            border: 1px solid #fff0e6;
+        }
+
+        .skills-section h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #ff9e7d;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .skill-item {
+            background-color: white;
+            padding: 0.6rem;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(255, 158, 125, 0.1);
+            font-weight: 500;
+            border-left: 4px solid #ff9e7d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Photo Placeholder (Portrait stylisé via Unsplash) -->
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80" alt="Portrait de Lyna" class="profile-img">
+        
+        <h1>Lyna</h1>
+        <p>Passionnée par la tech, le design et l'innovation. Bienvenue sur ma page personnelle !</p>
+        
+        <div class="tag">Exploratrice Digitale</div>
+
+        <div class="skills-section">
+            <h2>Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Gestion de projet</div>
+                <div class="skill-item">Créativité</div>
+                <div class="skill-item">Écoute active</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
